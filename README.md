@@ -1,4 +1,4 @@
-# Web App Part 3 - More Supabase queries and filtering
+# Web App Part 3 - Supabase queries and filtering
 
 Enda Lee 2024
 
