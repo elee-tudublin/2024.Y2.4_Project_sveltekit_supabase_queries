@@ -34,7 +34,7 @@
 			// if filter_id = 0 get all events
 			comp_events = await db.get_all_events();
 		}
-		console.log(comp_events);
+		console.log('comp events: ', comp_events);
 		// set events to the filtered data
 		$events = comp_events;
 	}
