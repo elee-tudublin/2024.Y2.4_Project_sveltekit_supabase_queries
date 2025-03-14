@@ -145,7 +145,7 @@
 					<thead>
 						<tr>
 							<th class="click-text" on:click={() => sort_by_col('id')}>
-								<!-- icon CSS class is set by checking if the table_sort value for the column is true (bi-sort-down) or false (bi-sort-up)-->
+								<!-- button icon CSS class is set by checking if the table_sort value for the column is true (bi-sort-down) or false (bi-sort-up)-->
 								<i class={table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>ID</th>
 							
 							<th class="click-text" on:click={() => sort_by_col('timestamp')}>
