@@ -170,7 +170,7 @@
 						{#each $events as event}
 							<tr>
 								<td><a href="/event_details/{event.id}">{event.id}</a></td>
-								<td>{format_timestamp(event.timestamp)}</td>
+								<td>{format_timestamp(event.created_at)}</td>
 								<td>{event.computers.name}</td>
 								<td>{event.description}</td>
 								<td>{event.level}</td>
