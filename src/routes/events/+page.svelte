@@ -146,20 +146,20 @@
 						<tr>
 							<th class="click-text" on:click={() => sort_by_col('id')}>
 								<!-- icon CSS class is set by checking if the table_sort value for the column is true (bi-sort-down) or false (bi-sort-up)-->
-								<i class={table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>ID</th
-							>
+								<i class={table_sort['id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}></i>ID</th>
+							
 							<th class="click-text" on:click={() => sort_by_col('timestamp')}>
 								<i class={table_sort['timestamp'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}>
-								</i>Time</th
-							>
+								</i>Time</th>
+							
 							<th class="click-text" on:click={() => sort_by_col('computer_id')}>
 								<i class={table_sort['computer_id'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}>
-								</i>Computer</th
-							>
+								</i>Computer</th>
+							
 							<th class="click-text" on:click={() => sort_by_col('description')}>
 								<i class={table_sort['description'] ? 'bi bi-sort-down' : 'bi bi-sort-up'}>
-								</i>Description</th
-							>
+								</i>Description</th>
+							
 							<th>Level</th>
 							<th>Service</th>
 							<th>Type</th>
