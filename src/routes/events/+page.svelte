@@ -178,7 +178,7 @@
 								<td>{event.type}</td>
 								<td>{event.user}</td>
 								<td>
-									<button	on:click={() => delete_event(event.id)} class="btn btn-sm btn-outline-danger">
+									<button aria-label="delete"	on:click={() => delete_event(event.id)} class="btn btn-sm btn-outline-danger">
 										<span class="bi bi-trash"></span>
 									</button>
 								</td>
