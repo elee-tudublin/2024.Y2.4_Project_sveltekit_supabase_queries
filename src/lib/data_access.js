@@ -45,12 +45,13 @@ export async function get_all_computers() {
 }
 
 // Get all events via Supabase API
-export async function get_all_events(order_col = 'timestamp', order_dir= true) {
+export async function get_all_events(order_col = 'created_at', order_dir= true) {
 	const result = await supabase
 	.from('events')
     // select computer name from computers table - requires valid one-many setup  
 	.select('*, computers(name)')
 	.order(order_col, { ascending: order_dir });
+
 
     // log errors
     if (result.error) {
