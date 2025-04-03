@@ -49,7 +49,7 @@ export async function get_all_events(order_col = 'created_at', order_dir= true) 
 	const result = await supabase
 	.from('events')
     // select computer name from computers table - requires valid one-many setup  
-	.select('*, computers(name)')
+	.select('*, computers(name), computer_id.sum()')
 	.order(order_col, { ascending: order_dir });
 
 
@@ -57,6 +57,8 @@ export async function get_all_events(order_col = 'created_at', order_dir= true) 
     if (result.error) {
         console.log(`get all events error: ${result.error}`);
     }
+
+    console.log('result: ', result);
 
     // return data
     return result.data;

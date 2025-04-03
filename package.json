@@ -1,5 +1,5 @@
 {
-	"name": "y2-1",
+	"name": "2025.y2.4-project-sveltekit-supabase-queries-main",
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
@@ -23,7 +23,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
 		"@testing-library/jest-dom": "^6.6.3",
 		"@testing-library/svelte": "^5.2.4",
-		"jsdom": "^25.0.1",
+		"jsdom": "^26.0.0",
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"svelte": "^5.0.0",
@@ -33,6 +33,6 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
-		"@supabase/supabase-js": "^2.48.1"
+		"@supabase/supabase-js": "^2.49.4"
 	}
 }
